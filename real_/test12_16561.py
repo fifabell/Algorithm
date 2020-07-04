@@ -1,4 +1,5 @@
-# ing
+#16561_3의 배수
+
 inp = int(input())
 
 def _16561(inp):
