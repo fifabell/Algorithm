@@ -1,3 +1,4 @@
+# ing
 inp = int(input())
 
 def _16561(inp):

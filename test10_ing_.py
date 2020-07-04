@@ -1,3 +1,4 @@
+# ing
 totalFriends = int(input())-1
 totallists = int(input())
 friends = [[] for i in range(totalFriends)]
