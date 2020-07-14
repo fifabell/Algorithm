@@ -5,6 +5,8 @@
 N = int(input())
 
 if N % 2 == 0:
+    pass
     # 짝수
 else:
+    pass
     # 홀수
