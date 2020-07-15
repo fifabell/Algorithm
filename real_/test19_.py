@@ -23,16 +23,20 @@ queue.append((start,0))
 visited.add(start)
 while queue:
     s, cnt = queue.popleft()
+    print("s: "+str(s))
+    print("cnt: "+str(cnt))
     if s == des:
         print(cnt)
     cnt += 1
-    if 0 <= s+1 <= 100000 and s+1 not in visited:
+    if 0 <= s+1 <= 10 and s+1 not in visited:
         visited.add(s+1)
         queue.append((s+1, cnt))
-    if 0 <= s-1 <= 100000 and s-1 not in visited:
+    if 0 <= s-1 <= 10 and s-1 not in visited:
         visited.add(s-1)
         queue.append((s-1, cnt))
-    if 0 <= s*2 <= 100000 and s*2 not in visited:
+    if 0 <= s*2 <= 10 and s*2 not in visited:
         visited.add(s*2)
         queue.append((s*2, cnt))
-    
+    print("queue: "+str(queue))
+    print("visited: "+str(visited))
+    print("----------------")
