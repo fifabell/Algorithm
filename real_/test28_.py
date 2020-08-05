@@ -52,4 +52,5 @@ for i in range(totalN):
 for s in dp :
     ans = max(ans, max(s))
 
+print(dp)
 print(ans)
