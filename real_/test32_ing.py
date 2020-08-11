@@ -6,23 +6,14 @@
 # 5
 
 k = int(input())
-arr = list(map(int,input().split()))
+inp = list(map(int,input().split()))
+comp = [max(inp) for _ in range(k)]
+lis = [0 for i in range(k)]
 
+comp[1] = inp[0]
+for i in range(1,len(comp)):
+    print(comp[i])
 
-def dfs(i):
-    for j in range(i+1,k):
-        cnt = 0
-        if arr[i] < arr[j] and visited[j] == False:
-            visited[j] = True
-            cnt += 1
-            dfs(j)
-        lst.append(cnt)
-
-for i in range(k):
-    lst = []
-    visited = [False for i in range(k)]
-    dfs(i)
-    print(lst)
 
 # 방법1_dp) 자기 자신보다 앞의 값 중 다수일경우 최대값의 +1을 한다.
 # 방법2_lis) 
